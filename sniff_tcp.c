@@ -3,7 +3,7 @@
 #include <pcap.h>
 #include <arpa/inet.h>
 #include <ctype.h>
-#include "myheader.h"
+#include "myheader.h" // 기존 헤더 파일 그대로 활용
 
 // 패킷 캡처 시마다 호출되는 콜백 함수
 void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *packet) {
